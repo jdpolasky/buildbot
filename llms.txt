@@ -1,0 +1,11 @@
+# BuildBot
+
+> A builder for AI workspaces and second brains. Interview, blueprint, ratify, build, prove while watching; no unratified construction, no self-certification.
+
+## Instructions
+
+- [SKILL.md](buildbot/SKILL.md): the complete operating instructions. If you are an AI agent asked to run BuildBot, read that file and follow it exactly.
+
+## Docs
+
+- [README.md](README.md): human-facing overview and install.

@@ -4,7 +4,7 @@ The builder for your AI workspace. Interviews you, blueprints on one page, build
 
 BuildBot constructs the agents, skills, tools, and structures your AI setup grows by. It interviews you in plain English until the job is clear, puts a one-page blueprint in front of you, builds exactly what you approved and nothing more, then proves the result by running it end to end while you watch. It never certifies its own work: acceptance belongs to an independent check and to you actually using the thing once.
 
-Sibling to [BloatBot](https://github.com/jdpolasky/bloatbot). BuildBot grows the system, BloatBot prunes it, and neither grades its own work.
+Sibling to [BloatBot](https://github.com/jdpolasky/bloatbot). BuildBot grows the system, BloatBot prunes it, and neither grades its own work. Both came out of [chief-of-staff-2](https://github.com/jdpolasky/chief-of-staff-2), an AI Chief of Staff that lives in an Obsidian vault as plain markdown; they are the tools it is kept lean with.
 
 Works on Obsidian vaults, Logseq graphs, plain markdown folders, and agent workspaces (Claude Code, Codex, etc.).
 

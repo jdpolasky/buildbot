@@ -4,11 +4,11 @@
 
 ## Instructions
 
-- [SKILL.md](buildbot/SKILL.md): the complete operating instructions. If you are an AI agent asked to run BuildBot, read that file and follow it exactly.
+- [SKILL.md](https://raw.githubusercontent.com/jdpolasky/buildbot/main/buildbot/SKILL.md): the complete operating instructions. If you are an AI agent asked to run BuildBot, read that file and follow it exactly.
 
 ## Docs
 
-- [README.md](README.md): human-facing overview and install.
+- [README.md](https://raw.githubusercontent.com/jdpolasky/buildbot/main/README.md): human-facing overview and install.
 
 ## Optional
 

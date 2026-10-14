@@ -1,6 +1,8 @@
 # BuildBot
 
-The builder for your AI workspace. Interviews you, blueprints on one page, builds only what you ratified, proves it while you watch.
+> Built by [Joshua Polasky](https://github.com/jdpolasky), a strategy and operations consultant. Business first, then AI. [How I work with businesses](https://github.com/jdpolasky/jdpolasky/blob/main/HOW-I-WORK.md) · joshua.polasky@gmail.com
+
+A builder for your AI workspace. Interviews you, blueprints on one page, builds only what you ratified, proves it while you watch.
 
 BuildBot constructs the agents, skills, tools, and structures your AI setup grows by. It interviews you in plain English until the job is clear, puts a one-page blueprint in front of you, builds exactly what you approved and nothing more, then proves the result by running it end to end while you watch. It never certifies its own work: acceptance belongs to an independent check and to you actually using the thing once.
 

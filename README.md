@@ -4,13 +4,20 @@ The builder for your AI workspace. Interviews you, blueprints on one page, build
 
 BuildBot constructs the agents, skills, tools, and structures your AI setup grows by. It interviews you in plain English until the job is clear, puts a one-page blueprint in front of you, builds exactly what you approved and nothing more, then proves the result by running it end to end while you watch. It never certifies its own work: acceptance belongs to an independent check and to you actually using the thing once.
 
-Sibling to [BloatBot](https://github.com/jdpolasky/bloatbot). BuildBot grows the system, BloatBot prunes it, and neither grades its own work. Both came out of [chief-of-staff-2](https://github.com/jdpolasky/chief-of-staff-2), an AI Chief of Staff that lives in an Obsidian vault as plain markdown; they are the tools it is kept lean with.
+Sibling to [BloatBot](https://github.com/jdpolasky/bloatbot). BuildBot grows the system, BloatBot prunes it, and neither grades its own work. Both came out of [chief-of-staff-2](https://github.com/jdpolasky/chief-of-staff-2), an AI Chief of Staff that lives in an Obsidian vault as plain markdown. BuildBot builds new parts for it and BloatBot keeps it lean. BloatBot is optional: BuildBot's SKILL.md uses it for the independent check only if it's installed.
 
 Works on Obsidian vaults, Logseq graphs, plain markdown folders, and agent workspaces (Claude Code, Codex, etc.).
 
 ## Install
 
-**Claude Code:**
+Get the files first:
+
+```bash
+git clone https://github.com/jdpolasky/buildbot
+cd buildbot
+```
+
+**Claude Code** (bash on macOS, Linux, or Git Bash):
 
 ```bash
 # all projects
@@ -20,7 +27,19 @@ cp -r buildbot ~/.claude/skills/buildbot
 cp -r buildbot your-project/.claude/skills/buildbot
 ```
 
+**Claude Code** (Windows PowerShell):
+
+```powershell
+# all projects
+Copy-Item -Recurse buildbot "$HOME\.claude\skills\buildbot"
+
+# or one project
+Copy-Item -Recurse buildbot your-project\.claude\skills\buildbot
+```
+
 New session, then `/buildbot`.
+
+**Codex:** OpenAI's docs say Codex reads skills in this same SKILL.md format from a `.agents/skills` folder, either in your home folder or in a repo. Copying `buildbot` there should work. BuildBot was tested on Claude Code and hasn't been run on Codex yet.
 
 **Everything else:** `buildbot/SKILL.md` is plain instructions. Paste it into any model that can read and write your files and tell it what you want built.
 
@@ -65,3 +84,7 @@ Optionally (with your permission) it keeps one file, `buildbot-ledger.md`: the l
 ## Why
 
 AI workspaces grow by accretion. A skill bolted on here, a config pasted there, and six months later nobody can say what half of it does or whether it ever worked. The failure pattern is always the same: things declared done that nobody watched working, structure nobody planned, builders grading themselves. BuildBot exists so that everything your system grows is ordered, blueprinted, watched working once, and checked by someone other than its builder.
+
+## Who made this
+
+Built by Joshua Polasky, a strategy and operations consultant. Business first, then AI. If you're an owner or leader who wants help figuring out where AI fits in your business, get in touch: joshua.polasky@gmail.com or [LinkedIn](https://linkedin.com/in/joshuapolasky).

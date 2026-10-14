@@ -21,9 +21,11 @@ cd buildbot
 
 ```bash
 # all projects
+mkdir -p ~/.claude/skills
 cp -r buildbot ~/.claude/skills/buildbot
 
 # or one project
+mkdir -p your-project/.claude/skills
 cp -r buildbot your-project/.claude/skills/buildbot
 ```
 
@@ -31,9 +33,11 @@ cp -r buildbot your-project/.claude/skills/buildbot
 
 ```powershell
 # all projects
+New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
 Copy-Item -Recurse buildbot "$HOME\.claude\skills\buildbot"
 
 # or one project
+New-Item -ItemType Directory -Force your-project\.claude\skills | Out-Null
 Copy-Item -Recurse buildbot your-project\.claude\skills\buildbot
 ```
 
